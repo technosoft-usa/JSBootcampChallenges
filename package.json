@@ -1,0 +1,26 @@
+{
+  "name": "jsbootcampchallenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive tests/**/*.js --timeout 60000 --exit",
+    "test:functions": "mocha --recursive tests/00_functions/**/*.js --timeout 60000 --exit",
+    "test:strings": "mocha --recursive tests/01_strings/**/*.js --timeout 60000 --exit",
+    "test:looping": "mocha --recursive tests/02_looping/**/*.js --timeout 60000 --exit",
+    "test:arrays": "mocha --recursive tests/03_arrays/**/*.js --timeout 60000 --exit",
+    "test:objects": "mocha --recursive tests/04_objects/**/*.js --timeout 60000 --exit",
+    "test:objectMethods": "mocha --recursive tests/05_objectMethods/**/*.js --timeout 60000 --exit",
+    "test:arrayMethods": "mocha --recursive tests/06_arrayMethods/**/*.js --timeout 60000 --exit",
+    "test:async": "mocha --recursive tests/07_async/**/*.js --timeout 60000 --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "chai": "^4.3.6",
+    "mocha": "^9.2.1",
+    "sinon": "^13.0.1"
+  }
+}
