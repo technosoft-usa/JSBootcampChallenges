@@ -26,6 +26,7 @@ describe('firstCharacter', () => {
   it('*** Bonus returns true if the strings start with the same characters but are different case', () => {
     const returnedValue = firstCharacter('bobby', 'Billy');
     expect(returnedValue).to.equal(true);
+    expect(firstCharacter('Joe', 'tom')).to.equal(false);
   });
 });
 

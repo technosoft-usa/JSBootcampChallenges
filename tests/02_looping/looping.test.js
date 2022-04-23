@@ -50,23 +50,23 @@ describe('slicer', () => {
   });
 
   it('returns a string', () => {
-    const returnedValue = slicer('easy peasy');
+    const returnedValue = slicer('easy as pie');
     expect(typeof returnedValue).to.equal('string');
   });
 
   it('returns a new string starting at the startIdx', () => {
-    const returnedValue = slicer('easy peasy lemon squeezy', 11);
-    expect(returnedValue).to.equal('lemon squeezy');
+    const returnedValue = slicer('twice the ice is nice', 10);
+    expect(returnedValue).to.equal('ice is nice');
   });
 
   it('returns a new string with the correct starting and ending indices', () => {
-    const returnedValue = slicer('easy peasy lemon squeezy', 5, 16);
-    expect(returnedValue).to.equal('peasy lemon');
+    const returnedValue = slicer('twice the ice is nice to slice', 6, 20);
+    expect(returnedValue).to.equal('the ice is nice');
   });
 
   it('returns the original string if no indices are inputted', () => {
-    const returnedValue = slicer('easy peasy');
-    expect(returnedValue).to.equal('easy peasy');
+    const returnedValue = slicer('twice the ice is nice to slice');
+    expect(returnedValue).to.equal('twice the ice is nice to slice');
   });
 });
 
