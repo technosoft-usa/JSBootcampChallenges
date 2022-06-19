@@ -4,7 +4,7 @@ addUnknown:  write a function named addUnknown that takes up to 5 arguments and 
 
 evenOrOdd: Write a function that accepts a number as an argument. return the string 'even' if it is an even nummber and 'odd' if it is an odd number
 
- operator
+operator:
 Write a function named operator that accepts three number arguments. operator should:
 
 return 'plus' if the first two numbers equal the third
