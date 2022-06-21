@@ -1,7 +1,51 @@
 /* eslint-disable no-undef */
 const { expect } = require('chai');
 
-const { cap, firstCharacter } = require('./strings');
+const { cap, firstCharacter, doesInclude } = require('./strings');
+
+describe('doesInclude', () => {
+  it('is a function', () => {
+    expect(typeof doesInclude).to.equal('function');
+  });
+
+  it('returns a boolean', () => {
+    const returnedValue = doesInclude('well hello', 'g');
+    expect(typeof returnedValue).to.equal('boolean');
+  });
+
+  it('returns true if the string includes the character', () => {
+    const returnedValue = doesInclude('gremlin', 'm');
+    expect(returnedValue).to.equal(true);
+  });
+
+  it('returns false if the string does not include the character', () => {
+    const returnedValue = firstCharacter('today', 'z');
+    expect(returnedValue).to.equal(false);
+  });
+});
+
+describe('isPalindrome', () => {
+  it('is a function', () => {
+    expect(typeof isPalindrome).to.equal('function');
+  });
+
+  it('returns a boolean', () => {
+    const returnedValue = isPalindrome('hello');
+    expect(typeof returnedValue).to.equal('boolean');
+  });
+
+  it('returns true if the strings are palindromes', () => {
+    const returnedValue = isPalindrome('dad');
+    expect(returnedValue).to.equal(true);
+
+    expect('kayak').to.equal(true);
+  });
+
+  it('returns false if the string is not a palindrome', () => {
+    const returnedValue = isPalindrome('yesterday');
+    expect(returnedValue).to.equal(false);
+  });
+});
 
 describe('firstCharacter', () => {
   it('is a function', () => {
