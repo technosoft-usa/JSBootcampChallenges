@@ -16,4 +16,6 @@ function firstCharacter(str1, str2) {
 
 }
 
-module.exports = { cap, firstCharacter };
+module.exports = {
+  cap, firstCharacter, doesInclude, isPalindrome,
+};
