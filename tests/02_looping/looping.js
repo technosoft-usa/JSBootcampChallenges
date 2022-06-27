@@ -8,7 +8,8 @@ function stringReverse(str) {
 
 }
 
-function slicer(str, startIdx, endIdx = str.length - 1) {
+// do not use built in slice method.
+function slicer(originalString, startIdx, endIdx) {
 
 }
 

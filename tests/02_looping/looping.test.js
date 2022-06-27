@@ -60,7 +60,7 @@ describe('slicer', () => {
   });
 
   it('returns a new string with the correct starting and ending indices', () => {
-    const returnedValue = slicer('twice the ice is nice to slice', 6, 20);
+    const returnedValue = slicer('twice the ice is nice to slice', 6, 21);
     expect(returnedValue).to.equal('the ice is nice');
   });
 
@@ -70,7 +70,7 @@ describe('slicer', () => {
   });
 });
 
-describe('addTheEvens', () => {
+describe.only('addTheEvens', () => {
   it('is a function', () => {
     expect(typeof addTheEvens).to.equal('function');
   });
