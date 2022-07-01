@@ -5,7 +5,7 @@ const {
   multiply, includesCopy, camelCase, inventory, joiner,
 } = require('./arrays');
 
-describe('multiply', () => {
+describe.only('multiply', () => {
   it('is a function', () => {
     expect(typeof multiply).to.equal('function');
   });

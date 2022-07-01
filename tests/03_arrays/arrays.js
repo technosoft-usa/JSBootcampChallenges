@@ -36,9 +36,7 @@ function inventory(arr) {
 
  const newArray = string.split(' ');
  console.log(newArray);
- 
 
- 
 }
 
 function camelCase(str) {

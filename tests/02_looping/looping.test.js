@@ -70,7 +70,7 @@ describe('slicer', () => {
   });
 });
 
-describe.only('addTheEvens', () => {
+describe('addTheEvens', () => {
   it('is a function', () => {
     expect(typeof addTheEvens).to.equal('function');
   });
