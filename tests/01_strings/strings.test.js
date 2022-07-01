@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 const { expect } = require('chai');
 
-const { cap, firstCharacter, doesInclude } = require('./strings');
+const { cap, firstCharacter, doesInclude, isPalindrome } = require('./strings');
 
 describe('doesInclude', () => {
   it('is a function', () => {
@@ -38,7 +38,7 @@ describe('isPalindrome', () => {
     const returnedValue = isPalindrome('dad');
     expect(returnedValue).to.equal(true);
 
-    expect('kayak').to.equal(true);
+    expect(isPalindrome('kayak')).to.equal(true);
   });
 
   it('returns false if the string is not a palindrome', () => {

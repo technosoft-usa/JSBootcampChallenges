@@ -5,7 +5,7 @@ const {
   max, addUnknown, evenOrOdd, operator,
 } = require('./functions');
 
-describe.only('max', () => {
+describe('max', () => {
   it('is a function', () => {
     expect(typeof max).to.equal('function');
   });
