@@ -2,7 +2,7 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-unused-vars */
 function deleteProp(obj, prop) {
-
+return obj
 }
 
 function numObjectProps(obj) {
