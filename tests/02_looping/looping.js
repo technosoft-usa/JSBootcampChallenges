@@ -19,8 +19,16 @@ function stringReverse(str) {
 
 }
 
-function slicer(str, startIdx, endIdx = str.length - 1) {
+function slicer(originalString, startIdx, endIdx = originalString.length) {
 
+  if (startIdx === undefined) {
+    return originalString;
+  }
+  let newSlice = '';
+  for (let i = startIdx; i < endIdx; i++) {
+    newSlice += originalString[i];
+  }
+  return newSlice
 }
 
 function addTheEvens(num) {
