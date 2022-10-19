@@ -249,7 +249,7 @@ describe('using reduce', () => {
       { item: 'Toyota camry', price: 20000 },
     ];
     after(() => {
-      spy.restore('filter');
+      spy.restore('reduce');
     });
     it('returns a number', () => {
       const cost = getCart(cart);

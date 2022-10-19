@@ -16,8 +16,8 @@ describe('multiply', () => {
   });
 
   it('returns a number equal to all the numbers in the array multiplied together', () => {
-    const returnedValue = multiply([1, 2, 3]);
-    expect(returnedValue).to.equal(6);
+    const returnedValue = multiply([2, 2, 3]);
+    expect(returnedValue).to.equal(12);
   });
 
   it('*** BONUS -- returns a number equal to all the numbers in a multidimensional array multiplied together', () => {
@@ -63,7 +63,7 @@ describe('camelCase', () => {
   });
 
   it('returns the camelCased version of input string if the first letter is capitalized', () => {
-    const returnedValue = camelCase('Capped is harder');
+    const returnedValue = camelCase('CaPPed is harder');
     expect(returnedValue).to.equal('cappedIsHarder');
   });
 

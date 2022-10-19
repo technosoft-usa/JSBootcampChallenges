@@ -87,7 +87,6 @@ describe('shoppingCart', () => {
         name: 'keyboards',
         amount: 12,
       },
-
     ];
 
     const returnedValue = shoppingCart(cartItems);
