@@ -2,7 +2,7 @@
 const { expect } = require('chai');
 
 const {
-  cap, firstCharacter, doesInclude, isPalindrome,
+  cap, firstCharacter, doesInclude,
 } = require('./strings');
 
 describe('doesInclude', () => {
@@ -21,30 +21,7 @@ describe('doesInclude', () => {
   });
 
   it('returns false if the string does not include the character', () => {
-    const returnedValue = firstCharacter('today', 'z');
-    expect(returnedValue).to.equal(false);
-  });
-});
-
-describe('isPalindrome', () => {
-  it('is a function', () => {
-    expect(typeof isPalindrome).to.equal('function');
-  });
-
-  it('returns a boolean', () => {
-    const returnedValue = isPalindrome('hello');
-    expect(typeof returnedValue).to.equal('boolean');
-  });
-
-  it('returns true if the strings are palindromes', () => {
-    const returnedValue = isPalindrome('dad');
-    expect(returnedValue).to.equal(true);
-
-    expect(isPalindrome('kayak')).to.equal(true);
-  });
-
-  it('returns false if the string is not a palindrome', () => {
-    const returnedValue = isPalindrome('yesterday');
+    const returnedValue = doesInclude('today', 'z');
     expect(returnedValue).to.equal(false);
   });
 });

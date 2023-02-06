@@ -98,7 +98,7 @@ describe('operator', () => {
     expect(returnedValue).to.equal('divide');
   });
 
-  it('returns if none of the other conditions are true', () => {
+  it('returns null if none of the other conditions are true', () => {
     const returnedValue = operator(124, 2345, 1);
     expect(returnedValue).to.equal(null);
   });
